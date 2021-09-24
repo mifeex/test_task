@@ -38,7 +38,6 @@ const Lines = props => {
     React.useEffect(() => {
         const dateValidator = () => {
             if(date !== startDate.getYear()) {
-                console.log(date)
                 date = startDate.getYear()
                 changeDate(startDate.getYear())
             }
@@ -57,7 +56,6 @@ const Lines = props => {
                 </td>
                 <td className={s.tableTD}>{props.name}</td>
                 {props.speakers.map(e => {
-                    console.log(e)
                     return <td className={s.tableTD}>
                                 {e.name} ({e.desc})
                             </td>

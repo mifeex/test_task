@@ -19,7 +19,6 @@ const Table = props => {
         })
     }, []);
 
-    console.log(lines)
     return (
         <>
             {rooms.map(e => {
